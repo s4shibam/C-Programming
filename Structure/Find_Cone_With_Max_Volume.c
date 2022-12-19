@@ -1,8 +1,8 @@
-//Structure
-//Take Multiple Cone Dimensions and Print Radius, Height, Volume and then Find the Cone with Maximum Volume.
+// Structure
+// Take Multiple Cone Dimensions and Print Radius, Height, Volume and then Find the Cone with Maximum Volume.
 
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 struct cone
 {
@@ -16,54 +16,54 @@ void main()
 {
 	int i, n;
 	float max;
-	printf ("Enter the Range = ");
-	scanf ("%d", &n);
-	
-	//Input
-	for (i=0; i<n; i++)
+	printf("Enter the Range = ");
+	scanf("%d", &n);
+
+	// Input
+	for (i = 0; i < n; i++)
 	{
-		printf ("\nEnter the Radius of Cone no. %d = ", i+1);
+		printf("\nEnter the Radius of Cone no. %d = ", i + 1);
 		scanf("%d", &c[i].r);
-		
-		printf ("\nEnter the Height of Cone no. %d = ", i+1);
+
+		printf("\nEnter the Height of Cone no. %d = ", i + 1);
 		scanf("%d", &c[i].h);
-		
-		c[i].vol = (3.14*c[i].r*c[i].r*c[i].h)/3;
+
+		c[i].vol = (3.14 * c[i].r * c[i].r * c[i].h) / 3;
 	}
-	
-	max= c[0].vol;
-	
-	//Output
+
+	max = c[0].vol;
+
+	// Output
 	printf("--------------------------------\n");
 	printf("\n         CONE VOLUME\n");
 	printf("--------------------------------\n");
 	printf("--------------------------------\n");
-	printf("No.\tRadius\tHeight\tVolume\n");	
+	printf("No.\tRadius\tHeight\tVolume\n");
 	printf("--------------------------------\n");
-	for (i=0; i<n; i++)
+	for (i = 0; i < n; i++)
 	{
-		printf("%d \t %d \t %d \t %.2f \n", i+1, c[i].r, c[i].h, c[i].vol);
+		printf("%d \t %d \t %d \t %.2f \n", i + 1, c[i].r, c[i].h, c[i].vol);
 	}
-	
+
 	printf("--------------------------------\n");
 	printf("\n     CONE WITH MAX VOLUME\n");
 	printf("--------------------------------\n");
 	printf("--------------------------------\n");
-	printf("No.\tRadius\tHeight\tVolume\n");	
+	printf("No.\tRadius\tHeight\tVolume\n");
 	printf("--------------------------------\n");
-	
-	//Finding The Max
-	for (i=0; i<n; i++)
+
+	// Finding The Max
+	for (i = 0; i < n; i++)
 	{
-		if (c[i].vol>max)
-		max=c[i].vol;
+		if (c[i].vol > max)
+			max = c[i].vol;
 	}
-	
-	//Max Print
-	for (i=0; i<n; i++)
+
+	// Max Print
+	for (i = 0; i < n; i++)
 	{
-		if (max==c[i].vol)
-		printf("%d \t %d \t %d \t %.2f \n", i+1, c[i].r, c[i].h, c[i].vol);
+		if (max == c[i].vol)
+			printf("%d \t %d \t %d \t %.2f \n", i + 1, c[i].r, c[i].h, c[i].vol);
 	}
-	getch();	
+	getch();
 }

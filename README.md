@@ -15,3 +15,4 @@ Such That:
 - Integer Array
 - Number Operations
 - File Handling etc.
+- Structure etc.

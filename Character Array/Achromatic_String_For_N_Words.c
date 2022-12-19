@@ -1,5 +1,5 @@
 // Character Array
-// Capitalize Each Word of given String and Print it.
+// Print Achromatic Form of Given String With N no. of Words.
 
 #include <stdio.h>
 #include <conio.h>
@@ -18,29 +18,23 @@ void main()
 		printf("%c", x[i]);
 	}
 
-	printf("\n\nAfter Capitalizing Each Word, your String is: ");
+	printf("\n\nAchromatic Form of the Name is: ");
 
 	if (x[0] >= 97 && x[0] <= 122)
-		printf("%c", x[0] - 32);
+		printf("%c.", x[0] - 32);
 
 	else
-		printf("%c", x[0]);
+		printf("%c.", x[0]);
 
 	for (i = 1; x[i] != '\0'; i++)
 	{
-		if (x[i] >= 97 && x[i] <= 122) // a to z
-			printf("%c", x[i]);
-
-		else if (x[i] >= 65 && x[i] <= 90) // A to Z
-			printf("%c", x[i] + 32);
-
-		else if (x[i] == ' ')
+		if (x[i] == ' ')
 		{
 			if (x[i + 1] >= 97 && x[i + 1] <= 122) // a to z
-				printf(" %c", x[i + 1] - 32);
+				printf(" %c.", x[i + 1] - 32);
 
 			else if (x[i + 1] >= 65 && x[i + 1] <= 90) // A to Z
-				printf(" %c", x[i + 1]);
+				printf(" %c.", x[i + 1]);
 
 			i++;
 		}
