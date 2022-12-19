@@ -1,0 +1,10 @@
+
+Python is a high level language.
+It is generally used for:
+1. Web development
+2. AI
+3. ML
+4. OS
+5. Mobile Application Development
+6. Video Games.
+wedfjko

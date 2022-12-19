@@ -1,0 +1,7 @@
+Top 5 Reasons To Learn C
+
+1. C is a Middle Level Language.
+2. Helps to understand the fundamentals of Computer Theories.
+3. Fewer Libraries.
+4. C is very fast in terms of execution time.
+5. Embedded Programming.
